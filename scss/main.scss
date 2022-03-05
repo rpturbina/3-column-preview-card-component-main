@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+// * Variables
+$sedan-card-color: hsl(31, 77%, 52%);
+$suvs-card-color: hsl(184, 100%, 22%);
+$luxury-card-color: hsl(179, 100%, 13%);
+
+$paragraph-color: hsla(0, 0%, 100%, 0.75);
+$light-gray: hsl(0, 0%, 95%);
+
+$lexend-deca-font: "Lexend Deca", sans-serif;
+$big-shoulders-font: "Big Shoulders Display", cursive;
+
+$fontweight-regular: 400;
+$fontweight-bold: 700;
+
+// * Global Styling
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $lexend-deca-font;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+// * Main Styling
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-gray;
+}
+
+// * Card Styling
+.card {
+  margin-left: 24px;
+  margin-right: 24px;
+  max-width: 327px;
+  padding: 48px;
+  transition: all 0.4s ease;
+
+  &--sedans {
+    margin-top: 88px;
+    background-color: $sedan-card-color;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  &--suvs {
+    background-color: $suvs-card-color;
+  }
+
+  &--luxury {
+    margin-bottom: 88px;
+    background-color: $luxury-card-color;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  &__heading {
+    margin-top: 30px;
+    color: $light-gray;
+    font-family: $big-shoulders-font;
+    font-size: 40px;
+    font-weight: $fontweight-bold;
+  }
+
+  &__description {
+    margin: 28px 0 28px 0;
+    color: $paragraph-color;
+    font-size: 15px;
+    font-weight: $fontweight-regular;
+    line-height: 25px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: $light-gray;
+    border: 2px solid $light-gray;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: $fontweight-regular;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: transparent;
+      color: $light-gray;
+    }
+
+    &--sedans {
+      color: $sedan-card-color;
+    }
+
+    &--suvs {
+      color: $suvs-card-color;
+    }
+
+    &--luxury {
+      color: $luxury-card-color;
+    }
+  }
+}
+
+// * Footer Styling
+.footer {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

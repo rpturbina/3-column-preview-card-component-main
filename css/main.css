@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+}
+
+.card {
+  margin-left: 24px;
+  margin-right: 24px;
+  max-width: 327px;
+  padding: 48px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.card--sedans {
+  margin-top: 88px;
+  background-color: #e38826;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card--suvs {
+  background-color: #006970;
+}
+
+.card--luxury {
+  margin-bottom: 88px;
+  background-color: #004241;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card__heading {
+  margin-top: 30px;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 28px 0 28px 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.card .button {
+  display: inline-block;
+  padding: 13px 28px;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card .button:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+.card .button--sedans {
+  color: #e38826;
+}
+
+.card .button--suvs {
+  color: #006970;
+}
+
+.card .button--luxury {
+  color: #004241;
+}
+
+.footer {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
