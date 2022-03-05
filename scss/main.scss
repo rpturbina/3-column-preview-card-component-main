@@ -22,6 +22,7 @@ $fontweight-bold: 700;
 }
 
 body {
+  position: relative;
   font-family: $lexend-deca-font;
 }
 
@@ -112,10 +113,48 @@ a {
 
 // * Footer Styling
 .footer {
-  display: none;
-  font-size: 11px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 12px;
   text-align: center;
   a {
-    color: hsl(228, 45%, 44%);
+    color: $luxury-card-color;
+  }
+}
+
+// * CSS Media Query
+// * Breakpoint, min-width: 1024px
+@media only screen and (min-width: 1024px) {
+  .cards {
+    display: flex;
+  }
+
+  .card {
+    max-width: calc(920px / 3);
+
+    &__description {
+      margin-bottom: 86px;
+    }
+
+    &--sedans {
+      margin-top: 0;
+      margin-right: 0;
+      border-bottom-left-radius: 8px;
+      border-top-right-radius: 0;
+    }
+
+    &--suvs {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--luxury {
+      margin-left: 0;
+      margin-bottom: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 8px;
+    }
   }
 }

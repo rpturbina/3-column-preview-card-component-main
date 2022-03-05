@@ -7,6 +7,7 @@
 }
 
 body {
+  position: relative;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -102,12 +103,45 @@ a {
 }
 
 .footer {
-  display: none;
-  font-size: 11px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 12px;
   text-align: center;
 }
 
 .footer a {
-  color: #3e52a3;
+  color: #004241;
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card {
+    max-width: calc(920px / 3);
+  }
+  .card__description {
+    margin-bottom: 86px;
+  }
+  .card--sedans {
+    margin-top: 0;
+    margin-right: 0;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+  }
+  .card--suvs {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card--luxury {
+    margin-left: 0;
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
