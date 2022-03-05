@@ -41,15 +41,15 @@ a {
 }
 
 // * Card Styling
+.cards {
+  margin: 88px 24px;
+}
 .card {
-  margin-left: 24px;
-  margin-right: 24px;
   max-width: 327px;
   padding: 48px;
   transition: all 0.4s ease;
 
   &--sedans {
-    margin-top: 88px;
     background-color: $sedan-card-color;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -60,7 +60,6 @@ a {
   }
 
   &--luxury {
-    margin-bottom: 88px;
     background-color: $luxury-card-color;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -139,20 +138,11 @@ a {
     }
 
     &--sedans {
-      margin-top: 0;
-      margin-right: 0;
       border-bottom-left-radius: 8px;
       border-top-right-radius: 0;
     }
 
-    &--suvs {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
     &--luxury {
-      margin-left: 0;
-      margin-bottom: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 8px;
     }

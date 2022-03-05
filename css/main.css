@@ -30,9 +30,11 @@ a {
   background-color: #f2f2f2;
 }
 
+.cards {
+  margin: 88px 24px;
+}
+
 .card {
-  margin-left: 24px;
-  margin-right: 24px;
   max-width: 327px;
   padding: 48px;
   -webkit-transition: all 0.4s ease;
@@ -40,7 +42,6 @@ a {
 }
 
 .card--sedans {
-  margin-top: 88px;
   background-color: #e38826;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -51,7 +52,6 @@ a {
 }
 
 .card--luxury {
-  margin-bottom: 88px;
   background-color: #004241;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -128,18 +128,10 @@ a {
     margin-bottom: 86px;
   }
   .card--sedans {
-    margin-top: 0;
-    margin-right: 0;
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0;
   }
-  .card--suvs {
-    margin-left: 0;
-    margin-right: 0;
-  }
   .card--luxury {
-    margin-left: 0;
-    margin-bottom: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 8px;
   }
